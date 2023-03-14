@@ -1,0 +1,9 @@
+version: 2
+seeds:
+  - name: brand_new
+    description: Lorem ipsum
+    columns:
+      - name: id
+        description: Lorem ipsum
+      - name: name
+        description: Lorem ipsum

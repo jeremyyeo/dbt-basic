@@ -1,8 +1,12 @@
 name: my_dbt_project
-profile: snowflake
+profile: databricks
 config-version: 2
 version: 1.0
 
-models:
+seeds:
   my_dbt_project:
-    +materialized: table
+    +file_format: delta
+    +location_root: /mnt/root/seeds
+    +persist_docs:
+      relation: true
+      columns: true
