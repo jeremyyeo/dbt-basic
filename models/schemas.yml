@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: foo_sql
+    config:
+      schema: sql_schema
+  - name: foo_py
+    config:
+      schema: python_schema
