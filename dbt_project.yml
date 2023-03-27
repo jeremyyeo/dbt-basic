@@ -7,6 +7,6 @@ models:
   my_dbt_project:
     +materialized: table
     folder_foo:
-      +enable: "{{ var('enable_foo', false) | as_bool }}"
+      +enabled: "{{ var('enable_foo', false) | as_bool }}"
     folder_bar:
-      +enable: true
+      +enabled: true
