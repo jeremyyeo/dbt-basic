@@ -1,1 +1,1 @@
-select 100 as num
+select 'alpha' as num
