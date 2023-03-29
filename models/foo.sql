@@ -1,1 +1,1 @@
-select 1 as id
+select 100 as num
