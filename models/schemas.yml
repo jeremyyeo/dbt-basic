@@ -6,3 +6,9 @@ models:
         tests:
           - is_not_null_custom:
               header: "{{ 'CALL SYSTEM$WAIT(' ~ var('wait_seconds', 0) ~ ');' }}"
+  - name: bar
+    columns:
+      - name: id
+        tests:
+          - is_not_null_custom:
+              header: "{{ 'CALL SYSTEM$WAIT(30);' }}"
