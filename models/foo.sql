@@ -1,1 +1,1 @@
-select 1 as id
+select * from {{ ref('snappy_1') }}
