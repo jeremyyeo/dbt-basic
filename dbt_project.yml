@@ -3,6 +3,9 @@ profile: snowflake
 config-version: 2
 version: 1.0
 
+model-paths: ["models"]
+
 models:
   my_dbt_project:
     +materialized: table
+
