@@ -1,6 +1,7 @@
-{% macro make_foo(num_tables, num_batches) %}
+{% macro make_foo(start, stop, num_batches) %}
     {% if execute %}
-        {% for i in range(num_tables or 100) | batch(num_batches or 10) %}
+        {% set full_range = range(start or 0, stop or 100) %}
+        {% for i in full_range | batch(num_batches or 10) %}
             {% set query %}
                 {% for _ in i -%}
                     create table if not exists {{ target.database }}.{{ target.schema }}.foo_{{ '%08d' % _ }} as select 1 as id;
