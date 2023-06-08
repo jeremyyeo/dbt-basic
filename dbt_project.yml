@@ -3,6 +3,8 @@ profile: snowflake
 config-version: 2
 version: 1.0
 
+macro-paths: ["ext/common"]
+
 models:
   my_dbt_project:
     +materialized: table
