@@ -1,2 +1,2 @@
 packages:
-  - local: "{{env_var('DBT_PROJECT_PATH', 'core')}}"
+  - local: "all_projects/{{env_var('DBT_PROJECT_PATH', 'core')}}"
