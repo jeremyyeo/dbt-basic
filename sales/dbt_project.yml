@@ -1,0 +1,7 @@
+name: sales
+profile: snowflake
+config-version: 2
+version: 1.0
+models:
+  sales:
+    +materialized: table
