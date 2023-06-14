@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: foo
+    columns: &copy
+      - name: id
+        tests:
+          - not_null
+  - name: bar
+    columns: *copy
+  - name: baz
+    columns: *copy
