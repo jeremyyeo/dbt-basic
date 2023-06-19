@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: public
+    tables:
+      - name: source_bar
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+
+models:
+  - name: foo
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
