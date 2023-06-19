@@ -3,17 +3,22 @@ version: 2
 sources:
   - name: public
     tables:
-      - name: source_bar
+      - name: source_bar # this exist
         columns:
           - name: id
             tests:
-              - unique
-              - not_null
+              - unique    # pass
+              - not_null  # fail
+      - name: source_doesnt_exist # this doesnt exist
+        columns:
+          - name: id
+            tests:
+              - unique  # error
 
 models:
   - name: foo
     columns:
       - name: id
         tests:
-          - unique
-          - not_null
+          - unique    # pass
+          - not_null  # fail
