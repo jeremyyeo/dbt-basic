@@ -22,3 +22,6 @@ models:
         tests:
           - unique    # pass
           - not_null  # fail
+          - relationships: # fail
+              to: ref('bar')
+              field: id
