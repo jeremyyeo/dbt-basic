@@ -1,0 +1,13 @@
+name: my_dbt_project
+profile: snowflake
+config-version: 2
+version: 1.0
+
+models:
+  my_dbt_project:
+<<<<<<< HEAD
+    +materialized: view
+=======
+    +materialized: table
+
+>>>>>>> origin/test-pak
