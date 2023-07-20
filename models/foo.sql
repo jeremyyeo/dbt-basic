@@ -1,1 +1,1 @@
-select 1 as id
+select * from {{ source('dbt_jyeo', 'yas') }}

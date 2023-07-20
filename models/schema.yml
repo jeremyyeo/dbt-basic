@@ -1,8 +1,6 @@
 version: 2
-models:
-  - name: foo
-    columns:
-      - name: id
-        tests:
-          - not_null
-          - unique
+
+sources:
+  - name: dbt_jyeo
+    tables:
+      - name: yas
