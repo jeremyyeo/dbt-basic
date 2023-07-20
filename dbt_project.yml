@@ -5,4 +5,4 @@ version: 1.0
 
 models:
   my_dbt_project:
-    +materialized: incremental
+    +materialized: table

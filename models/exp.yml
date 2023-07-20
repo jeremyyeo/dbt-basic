@@ -1,0 +1,10 @@
+version: 2
+
+exposures:
+  - name: FakeDashboard
+    type: dashboard
+    depends_on:
+      - ref("foo")
+    owner:
+      name: JY
+      email: jeremy.yeo@dbtlabs.com
