@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    database: raw
+    tables:
+      - name: src_foo
+      - name: src_bar
