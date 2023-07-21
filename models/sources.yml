@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: dbt_jeyo
+    tables:
+      - name: table_name
+        description: aa aa 
+        external:
+          prop: "{{ modules.datetime.datetime.now() | string | string}}"
+      - name: table_foo
