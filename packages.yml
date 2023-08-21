@@ -1,0 +1,3 @@
+packages:
+  - package: fivetran/salesforce_formula_utils
+    version: [">=0.9.0", "<0.10.0"] # we recommend using ranges to capture non-breaking changes automatically
