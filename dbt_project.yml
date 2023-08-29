@@ -6,3 +6,10 @@ version: 1.0
 models:
   my_dbt_project:
     +materialized: table
+
+on-run-start:
+  - "{{ log('----------------------------', True) }}"
+  - "{{ log(target, True) }}"
+  - "{{ log(target.name, True) }}"
+  - "{{ log(target.target_name, True) }}"
+  - "{{ log('----------------------------', True) }}"
