@@ -1,0 +1,24 @@
+# create stage if not exists development.dbt_jyeo.flat_files url = 's3://dbt-external-tables-testing' file_format = (type = csv);
+version: 2
+sources:
+  - name: raw
+    database: development
+    schema: dbt_jyeo
+    loader: S3
+    tables:
+      - name: ext_people
+        external: &people
+          location: "@development.dbt_jyeo.flat_files/csv"
+          file_format: "(type = csv skip_header = 1)"
+        columns: &people-cols
+          - name: id
+            data_type: int
+          - name: first_name
+            data_type: varchar(64)
+          - name: last_name
+            data_type: varchar(64)
+          - name: email
+            data_type: varchar(64)
+      - name: ext_people_2
+        external: *people
+        columns: *people-cols
