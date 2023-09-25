@@ -6,3 +6,6 @@ version: 1.0
 models:
   my_dbt_project:
     +materialized: table
+    +file_format: delta
+    +location_root: |
+      {{ "/mnt/gold/" ~ target.schema ~ "/analytics" }}
