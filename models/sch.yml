@@ -1,0 +1,8 @@
+version: 2
+models:
+  - name: bar
+    columns:
+      - name: id
+        tests:
+          - accepted_values:
+              values: [2]
