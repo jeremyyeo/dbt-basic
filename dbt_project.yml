@@ -1,9 +1,8 @@
-name: mesh_core
+name: mesh_downstream
 profile: all
 config-version: 2
 version: 1.0
 
 models:
-  mesh_core:
+  mesh_downstream:
     +materialized: table
-    +schema: analytics
