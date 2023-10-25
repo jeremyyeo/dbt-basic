@@ -1,1 +1,1 @@
-select * from foo
+select * from {{ ref('foo') }}
