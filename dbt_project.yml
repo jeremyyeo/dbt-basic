@@ -6,4 +6,4 @@ version: "1.0.0"
 models:
   +sql_header: "{% if target.type == 'snowflake' %}call system$wait({{ var('wait_seconds', 0) }}, 'SECONDS');alter session set use_cached_result=false;{% endif %}"
   my_dbt_project:
-    +materialized: view
+    +materialized: incremental
