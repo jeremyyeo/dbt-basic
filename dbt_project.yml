@@ -1,7 +1,7 @@
 name: my_dbt_project
 profile: all
 config-version: 2
-version: "1.0.0"
+version: "2.0.0"
 
 models:
   +sql_header: "{% if target.type == 'snowflake' %}call system$wait({{ var('wait_seconds', 0) }}, 'SECONDS');alter session set use_cached_result=false;{% endif %}"
