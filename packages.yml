@@ -1,3 +1,0 @@
-packages:
-  - git: "https://{{ env_var('DBT_ENV_SECRET_GIT') }}@github.com/picturatechnica/secret-pkg.git" # git HTTPS URL
-    revision: main
