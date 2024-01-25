@@ -1,0 +1,30 @@
+models:
+  - name: model_transactions
+    columns:
+      - name: id
+      - name: amount
+      - name: transaction_date
+
+semantic_models:
+  - name: semantic_model_transaction
+    model: ref('model_transactions')
+    defaults:
+      agg_time_dimension: transaction_date
+    entities:
+      - name: id
+        type: primary
+    measures:
+      - name: amount
+        agg: sum
+    dimensions:
+      - name: transaction_date
+        type: time
+        type_params:
+          time_granularity: day
+
+metrics:
+  - name: metric_transaction_total
+    type: simple
+    label: Transaction Total
+    type_params:
+      measure: amount
