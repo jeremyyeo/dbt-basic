@@ -1,2 +1,2 @@
 -- models/bar.sql
-select * from {{ ref('foo') }}
+select id as not_id from {{ ref('foo') }}
