@@ -1,1 +1,2 @@
-select 1 id
+-- models/foo.sql
+select 1 as id
