@@ -15,3 +15,16 @@ models:
       - name: id
         tests:
           - not_null
+
+exposures:
+  - name: my_exposure
+    type: dashboard
+    maturity: high
+    url: https://bi.tool/dashboards/1
+    description: Lorem ipsum
+    depends_on:
+      - ref('foo')
+      - source('dbt_jyeo', 'raw_customers')
+    owner:
+      name: Callum McData
+      email: data@jaffleshop.com
