@@ -1,1 +1,1 @@
-select 1 id
+select * from {{ source('dbt_jyeo', 'raw_customers') }}

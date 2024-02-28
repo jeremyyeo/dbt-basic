@@ -1,0 +1,17 @@
+version: 2
+sources:
+  - name: dbt_jyeo
+    tables:
+      - name: raw_customers
+        loaded_at_field: updated_at
+        freshness:
+          error_after:
+            count: 180
+            period: day
+
+models:
+  - name: foo
+    columns:
+      - name: id
+        tests:
+          - not_null
