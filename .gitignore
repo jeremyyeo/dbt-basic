@@ -1,6 +1,8 @@
 dbt_packages/
 dbt_modules/
 logs/
-target/
+!target/
 venv*
 .env
+
+/target/
