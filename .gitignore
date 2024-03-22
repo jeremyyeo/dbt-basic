@@ -7,3 +7,4 @@ venv*
 .scratch
 .python-version
 .DS_Store
+package-lock.yml
