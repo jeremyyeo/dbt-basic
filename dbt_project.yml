@@ -6,11 +6,3 @@ version: 1.0
 models:
   my_dbt_project:
     +materialized: table
-
-seeds:
-  +schema: foo
-
-on-run-end: 
-  - "{% do print('>>> print - in console and debug logs') %}"
-  - "{% do log('>>> log - in debug logs') %}"
-  - "{% do log('>>>log true - in console and debug logs', True) %}"
