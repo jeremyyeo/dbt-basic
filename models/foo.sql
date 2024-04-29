@@ -1,1 +1,1 @@
-select 1 id
+select * from this_doesnt_exist
