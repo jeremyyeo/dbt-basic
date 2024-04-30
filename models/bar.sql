@@ -1,1 +1,1 @@
-select * from this_table_doesnt_exist
+select * from {{ ref('foo') }}
