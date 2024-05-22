@@ -1,0 +1,10 @@
+selectors:
+  - name: night_only
+    default: True
+    definition:
+      union:
+        - method: tag
+          value: nightly
+        - exclude:
+           - method: tag
+             value: daily
