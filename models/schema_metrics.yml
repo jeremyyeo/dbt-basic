@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: fct_orders
+    columns:
+      - name: order_id
+        description: The id of the order.
+      - name: amount
+        description: The amount sold.
+      - name: order_date
+        description: The date of the order.
+
+semantic_models:
+  - name: orders
+    defaults:
+      agg_time_dimension: order_date
+    description: |
+      Order fact table. This table's grain is one row per order.
+    model: ref('fct_orders')
+    entities:
+      - name: order_id
+        type: primary
+    dimensions:
+      - name: order_date
+        type: time
+        type_params:
+          time_granularity: day
+    measures:
+      - name: order_total
+        description: The total amount for each order including taxes.
+        agg: sum
+        expr: amount
+
+metrics: 
+  - name: order_total
+    description: Sum of orders value
+    type: simple
+    label: order_total
+    type_params:
+      measure: order_total

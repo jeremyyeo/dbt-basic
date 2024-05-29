@@ -1,10 +1,8 @@
-name: my_dbt_project
+name: my_jaffle_shop
 profile: all
 config-version: 2
 version: "1.0.0"
 
 models:
- my_dbt_project:
-    +materialized: table
-    +schema: dbt_jyeo
-
+ my_jaffle_shop:
+   +materialized: table
