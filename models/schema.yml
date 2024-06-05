@@ -1,0 +1,6 @@
+version: 2
+models:
+  - name: foo
+    config:
+      materialized: view
+      schema: dbt_jyeo
