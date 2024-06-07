@@ -2,6 +2,7 @@
 
 {{
     config(
+      enabled=false,
       target_schema='dbt_jyeo_snapshot',
       unique_key='id',
       strategy='timestamp',

@@ -1,1 +1,1 @@
-select * from {{ ref('snappy') }}
+select null as id
