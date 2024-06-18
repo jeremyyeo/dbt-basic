@@ -11,7 +11,7 @@ models:
    my_dbt_project:
     +materialized: table
 
-data_tests:
+tests:
    +store_failures: true
    +database: "{{ target.name | upper }}_JYEO"
 

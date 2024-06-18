@@ -3,6 +3,6 @@ models:
   - name: foo
     columns:
       - name: id
-        data_tests:
+        tests:
           - not_null
           - unique
