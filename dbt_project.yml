@@ -1,10 +1,18 @@
 name: my_dbt_project
 profile: all
-config-version: 2
 version: "1.0.0"
 
-models:
- my_dbt_project:
-    +materialized: table
-    +schema: dbt_jyeo
+clean-targets:
+   - target
+   - target_old
+   - dbt_packages
 
+models:
+   my_dbt_project:
+    +materialized: table
+
+tests:
+   +store_failures: true
+   +database: "{{ target.name | upper }}_JYEO"
+
+# target.name's are 'development' or 'prod'.
