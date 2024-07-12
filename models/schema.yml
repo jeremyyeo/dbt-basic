@@ -1,0 +1,5 @@
+models:
+  - name: foo
+    columns:
+      - name: id
+        description: The ID.
