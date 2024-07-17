@@ -1,6 +1,6 @@
 
 {%- set q -%}
-select s_nationkey from raw_tpch.tpch_sf1000.supplier group by 1
+select s_nationkey from raw_tpch.tpch_sf1000.supplier
 {%- endset -%}
 
 {%- set results = run_query(q) -%}
@@ -11,7 +11,7 @@ select s_nationkey from raw_tpch.tpch_sf1000.supplier group by 1
     {% set nations = [] %}
 {%- endif -%}
 
-{%- for nation in nations -%}
+{%- for nation in set(nations) -%}
 select {{ nation }} as id
     {% if not loop.last -%} 
     union all 
