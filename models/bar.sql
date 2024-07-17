@@ -1,6 +1,6 @@
 
 {%- set q -%}
-select s_nationkey from raw_tpch.tpch_sf1000.supplier
+select s_nationkey from raw_tpch.tpch_sf1000.supplier group by 1
 {%- endset -%}
 
 {%- set results = run_query(q) -%}
