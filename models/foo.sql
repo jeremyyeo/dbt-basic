@@ -1,2 +1,2 @@
 
-select 'foo' as id
+select 999 id
