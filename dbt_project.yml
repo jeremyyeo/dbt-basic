@@ -12,7 +12,10 @@ models:
     stage:
       +schema: dev
       +database: test_jyeo
+    int:
+      +schema: dev
+      +database: prod_jyeo
 
 # Schema 'development_jyeo.dev' has 5000 dummy tables with 20 columns each = 100,000
 # Schema 'test_jyeo.dev' has 5000 dummy tables with 30 columns each = 150,000
-# Schema 'prod_jyeo.dev' has 5000 dummy tables with 40 columns each = 200,000
+# Schema 'prod_jyeo.dev' has 5000 dummy tables with 50 columns each = 250,000
