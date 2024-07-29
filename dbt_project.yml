@@ -6,9 +6,9 @@ version: "1.0.0"
 models:
   my_dbt_project:
     +materialized: table
-    stage:
-      +schema: dev
     mart:
       +schema: mart
+    stage:
+      +schema: dev
 
 # Schema 'dev' has 2500 dummy tables with 20 columns each.
