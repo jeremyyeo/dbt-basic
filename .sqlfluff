@@ -1,0 +1,11 @@
+[sqlfluff]
+dialect = snowflake
+max_line_length = 120
+templater = dbt
+
+[sqlfluff:templater:dbt]
+# Ensure dbt_utils and other packages are recognized
+macros = dbt_utils
+
+[sqlfluff:templater:jinja]
+apply_dbt_builtins = True

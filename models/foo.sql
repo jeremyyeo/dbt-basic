@@ -1,2 +1,1 @@
-
-select 'foo' as id
+select lower(trim({{ dbt_utils.get_url_parameter('pages.context_page_url', 'utm_campaign') }})) as utm_campaign
