@@ -14,8 +14,19 @@ models:
       +database: test_jyeo
     int:
       +schema: dev
-      +database: prod_jyeo
+      int_a:
+        +database: int_a
+      int_b:
+        +database: int_b
+      int_c:
+        +database: int_c
+      int_d:
+        +database: int_d
+      int_e:
+        +database: int_e
 
-# Schema 'development_jyeo.dev' has 5000 dummy tables with 20 columns each = 100,000
-# Schema 'test_jyeo.dev' has 5000 dummy tables with 30 columns each = 150,000
-# Schema 'prod_jyeo.dev' has 5000 dummy tables with 50 columns each = 250,000
+# Schema 'int_a.dev' has 5000 dummy tables with 50 columns each = 250,000
+# Schema 'int_b.dev' has 5000 dummy tables with 50 columns each = 250,000
+# Schema 'int_c.dev' has 5000 dummy tables with 50 columns each = 250,000
+# Schema 'int_d.dev' has 5000 dummy tables with 50 columns each = 250,000
+# Schema 'int_e.dev' has 5000 dummy tables with 50 columns each = 250,000
