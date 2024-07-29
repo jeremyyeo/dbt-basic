@@ -7,8 +7,12 @@ models:
   my_dbt_project:
     +materialized: table
     mart:
-      +schema: mart
+      +schema: dev
+      +database: development_jyeo
     stage:
       +schema: dev
+      +database: test_jyeo
 
-# Schema 'dev' has 2500 dummy tables with 20 columns each.
+# Schema 'development_jyeo.dev' has 5000 dummy tables with 20 columns each = 100,000
+# Schema 'test_jyeo.dev' has 5000 dummy tables with 30 columns each = 150,000
+# Schema 'prod_jyeo.dev' has 5000 dummy tables with 40 columns each = 200,000
