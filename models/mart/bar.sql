@@ -1,6 +1,6 @@
 
 {%- set q -%}
-select s_nationkey from raw_tpch.tpch_sf1000.supplier
+select distinct s_nationkey from raw_tpch.tpch_sf1000.supplier
 {%- endset -%}
 
 {%- set results = run_query(q) -%}
