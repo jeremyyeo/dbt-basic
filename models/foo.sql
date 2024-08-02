@@ -1,1 +1,1 @@
-select 2 as c
+select 1 as c
