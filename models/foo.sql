@@ -1,1 +1,1 @@
-select null id
+select 1 id
