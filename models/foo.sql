@@ -1,3 +1,3 @@
-{{ config(materialized='view') }}
+{{ config(materialized='table') }}
 
-select 3 id
+select 1 id
