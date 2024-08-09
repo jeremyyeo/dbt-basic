@@ -1,6 +1,0 @@
-models:
-  - name: foo
-    columns:
-      - name: id
-        tests:
-          - not_null
