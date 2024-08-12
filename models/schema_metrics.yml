@@ -38,3 +38,16 @@ metrics:
     label: order_total
     type_params:
       measure: order_total
+
+saved_queries:
+  - name: my_saved_query
+    config:
+      cache:
+        enabled: true
+    query_params:
+      metrics:
+        - order_total
+    exports:
+      - name: my_export
+        config:
+          export_as: table
