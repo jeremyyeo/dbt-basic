@@ -1,0 +1,5 @@
+# models/schema.yml
+models:
+  - name: foo
+    tests:
+      - my_test
