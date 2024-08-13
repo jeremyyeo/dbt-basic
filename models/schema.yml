@@ -1,0 +1,13 @@
+models:
+  - name: a
+    columns:
+      - name: ctz
+        data_tests:
+          - accepted_values:
+              values: ['Pacific/Auckland']
+  - name: b
+    columns:
+      - name: ctz
+        data_tests:
+          - accepted_values:
+              values: ['America/Los_Angeles']
