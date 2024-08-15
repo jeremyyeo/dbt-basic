@@ -1,9 +1,18 @@
 name: my_dbt_project
-profile: bq
+profile: all
 config-version: 2
 version: "1.0.0"
 
 models:
-   my_dbt_project:
-      +materialized: table
-      # +sql_header: "{% if target.type == 'snowflake' %}call system$wait({{ var('wait_seconds', 0) }}, 'SECONDS');{% endif %}"
+  my_dbt_project:
+    +materialized: table
+  dbt_project_evaluator:
+      +enabled: false
+
+tests:
+  dbt_project_evaluator:
+    +enabled: false
+
+dispatch:
+  - macro_namespace: dbt_utils
+    search_order: ['dbt_project_evaluator', 'dbt_utils']
