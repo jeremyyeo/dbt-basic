@@ -1,0 +1,6 @@
+sources:
+  - name: raw
+    tables: 
+    - name: customers
+      external:
+        some_key: "{{ modules.datetime.datetime.now().strftime('%Y%m%d_%H%M%S') ~ '.csv'}}"
