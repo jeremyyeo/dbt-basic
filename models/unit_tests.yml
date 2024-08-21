@@ -1,9 +1,9 @@
 models:
   - name: bar
-    # latest_version: 1
-    # versions:
-    #   - v: 1
-    #   - v: 2
+    latest_version: 1
+    versions:
+      - v: 1
+      - v: 2
 
 unit_tests:
   - name: foo_times_0_bar
@@ -12,32 +12,30 @@ unit_tests:
       - input: ref('foo')
         rows:
           - {input: 0}
-          - {input: 2}
     expect:
       rows:
           - {output: 0}
+  - name: foo_times_2_bar
+    model: bar
+    versions:
+      include:
+        - 1
+    given:
+      - input: ref('foo')
+        rows:
+          - {input: 2}
+    expect:
+      rows:
           - {output: 4}
-  # - name: foo_times_2_bar
-  #   model: bar
-  #   versions:
-  #     include:
-  #       - 1
-  #   given:
-  #     - input: ref('foo')
-  #       rows:
-  #         - {input: 2}
-  #   expect:
-  #     rows:
-  #         - {output: 4}
-  # - name: bfoo_times_4_bar
-  #   model: bar
-  #   versions:
-  #     exclude:
-  #       - 1
-  #   given:
-  #     - input: ref('foo')
-  #       rows:
-  #         - {input: 2}
-  #   expect:
-  #     rows:
-  #         - {output: 8}
+  - name: foo_times_4_bar
+    model: bar
+    versions:
+      include:
+        - 2
+    given:
+      - input: ref('foo')
+        rows:
+          - {input: 2}
+    expect:
+      rows:
+          - {output: 8}
