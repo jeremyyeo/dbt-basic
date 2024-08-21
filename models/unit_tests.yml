@@ -12,9 +12,11 @@ unit_tests:
       - input: ref('foo')
         rows:
           - {input: 0}
+          - {input: 2}
     expect:
       rows:
           - {output: 0}
+          - {output: 4}
   # - name: foo_times_2_bar
   #   model: bar
   #   versions:
