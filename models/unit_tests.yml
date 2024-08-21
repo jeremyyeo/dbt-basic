@@ -1,0 +1,41 @@
+models:
+  - name: bar
+    # latest_version: 1
+    # versions:
+    #   - v: 1
+    #   - v: 2
+
+unit_tests:
+  - name: foo_times_0_bar
+    model: bar
+    given:
+      - input: ref('foo')
+        rows:
+          - {input: 0}
+    expect:
+      rows:
+          - {output: 0}
+  # - name: foo_times_2_bar
+  #   model: bar
+  #   versions:
+  #     include:
+  #       - 1
+  #   given:
+  #     - input: ref('foo')
+  #       rows:
+  #         - {input: 2}
+  #   expect:
+  #     rows:
+  #         - {output: 4}
+  # - name: bfoo_times_4_bar
+  #   model: bar
+  #   versions:
+  #     exclude:
+  #       - 1
+  #   given:
+  #     - input: ref('foo')
+  #       rows:
+  #         - {input: 2}
+  #   expect:
+  #     rows:
+  #         - {output: 8}
