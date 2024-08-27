@@ -1,0 +1,15 @@
+models:
+  - name: foo
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: id
+        data_type: int
+  - name: bar
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: id
+        data_type: int
