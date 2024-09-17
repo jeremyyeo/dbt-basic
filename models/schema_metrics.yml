@@ -43,7 +43,7 @@ saved_queries:
   - name: my_saved_query
     config:
       cache:
-        enabled: true
+        enabled: false
     query_params:
       metrics:
         - order_total
