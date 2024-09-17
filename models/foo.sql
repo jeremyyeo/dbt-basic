@@ -1,1 +1,1 @@
-select 2 id, 2 as new_id
+select 2 id, 3 as new_id
