@@ -6,6 +6,8 @@ models:
     columns:
       - name: id
         data_type: int
+      - name: new_id
+        data_type: int
   - name: bar
     config:
       contract:
