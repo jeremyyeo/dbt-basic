@@ -1,3 +1,3 @@
 # dbt-basic
 
-dbt projects that reproduces issues.
+dbt projects that reproduces issuess.
