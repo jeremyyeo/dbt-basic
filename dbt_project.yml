@@ -7,5 +7,10 @@ models:
  my_jaffle_shop:
    +materialized: table
 
-dbt-cloud:
-    project-id: 370817
+# We will have a YAML schema validation warning. But this doesn't stop the config from working.
+saved-queries:
+  my_jaffle_shop:
+    +schema: dbt_jyeo_saved_queries 
+
+# dbt-cloud:
+#     project-id: 370817
