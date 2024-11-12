@@ -1,8 +1,9 @@
 name: my_dbt_project
 profile: all
 config-version: 2
-version: 1.0
+version: "1.0.0"
 
 models:
   my_dbt_project:
     +materialized: table
+    +sql_header: "{% if target.type == 'snowflake' %}call system$wait({{ var('wait_seconds', 0) }}, 'SECONDS');{% endif %}"
