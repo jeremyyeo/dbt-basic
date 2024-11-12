@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fct_orders
+    columns:
+      - name: order_id
+        description: The id of the order.
+      - name: amount
+        description: The amount sold.
+      - name: order_date
+        description: The date of the order.
+
