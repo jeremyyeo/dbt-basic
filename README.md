@@ -9,3 +9,5 @@ dbt clean
 dbt deps
 dbt run
 ```
+
+![alt text](image.png)
