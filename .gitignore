@@ -2,6 +2,7 @@ dbt_packages/
 dbt_modules/
 logs/
 target/
+package-lock.yml
 venv*
 .env
 .scratch
