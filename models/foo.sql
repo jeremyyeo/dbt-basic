@@ -1,1 +1,2 @@
-select 2 id
+
+select 1 id

@@ -1,0 +1,8 @@
+sources:
+  - name: raw
+    database: db  
+    loaded_at_field: updated_at
+    freshness:
+      error_after: {count: 10, period: minute}
+    tables:
+      - name: orders
