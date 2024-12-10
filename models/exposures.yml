@@ -8,3 +8,12 @@ exposures:
     owner:
       name: Jeremy Yeo
       email: jeremy.yeo@dbtlabs.com
+  - name: yet_antother_analysis
+    type: analysis
+    url: https://bi.tool/dashboards/1
+    depends_on:
+      - ref('foo')
+      - source('raw', 'orders')
+    owner:
+      name: Jeremy Yeo
+      email: jeremy.yeo@dbtlabs.com
