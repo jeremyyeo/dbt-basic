@@ -8,5 +8,9 @@ models:
         data_type: int
         constraints:
           - type: not_null
+      - name: new_id
+        data_type: int
+        constraints:
+          - type: not_null
     versions:
      - v: 1
