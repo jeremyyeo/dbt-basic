@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: foo
+    docs:
+      show: true
+    columns:
+      - name: order_amount
+        tests:
+          - not_null
