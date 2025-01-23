@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    tables: &some_anchor
+      - name: orders
+        columns:
+          - name: updated_at
+            description: The timestamp.
