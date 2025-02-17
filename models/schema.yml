@@ -1,10 +1,6 @@
-version: 2
-
 models:
   - name: foo
-    docs:
-      show: true
     columns:
-      - name: order_amount
+      - name: id
         tests:
           - not_null
