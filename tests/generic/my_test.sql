@@ -3,6 +3,6 @@
 
 {{ config(meta = {'whats_this_for': description}) }}
 
-select 1 as c
+with x as (select 1 as c) select * from x where false
 
 {%- endtest -%}
