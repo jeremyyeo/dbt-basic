@@ -1,3 +1,1 @@
-select 1 id, 'alice' as first_name, 'smith' as last_name
-union
-select 2 id, 'bob' as first_name, 'smith' as last_name
+select 3 id, 'eve' as first_name, 'smith' as last_name
