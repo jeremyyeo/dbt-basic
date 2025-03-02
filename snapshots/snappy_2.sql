@@ -4,7 +4,7 @@
         config(
           strategy='check',
           check_cols='all',
-          unique_key='id',
+          unique_key='id'
         )
     }}
 
