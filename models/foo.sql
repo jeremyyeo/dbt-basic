@@ -1,1 +1,2 @@
-select 1 id
+
+select 1 id, 'alice' as first_name

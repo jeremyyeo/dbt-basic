@@ -1,0 +1,7 @@
+snapshots:
+  - name: snappy
+    relation: ref('foo')
+    config:
+      strategy: check
+      check_cols: all
+      unique_key: id
