@@ -1,1 +1,2 @@
-select 1 id
+
+select * from {{ source('raw', 'customers') }}

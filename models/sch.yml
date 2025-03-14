@@ -1,9 +1,0 @@
-# models/schema.yml
-version: 2
-models:
-  - name: foo
-    columns:
-      - name: id
-        tests:
-          - my_custom_test:
-              description: This is a test to test something.
