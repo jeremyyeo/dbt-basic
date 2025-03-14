@@ -3,3 +3,4 @@ sources:
     tables:
       - name: customers
         description: "The content here differs to the comment on Snowflake"
+      - name: sales
