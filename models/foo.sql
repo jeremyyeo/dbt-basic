@@ -1,2 +1,5 @@
 
-select * from {{ source('raw', 'customers') }}
+select
+    *
+from
+    customers
