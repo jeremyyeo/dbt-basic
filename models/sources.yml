@@ -1,0 +1,5 @@
+# models/sources.yml
+sources:
+  - name: raw
+    tables:
+      - name: customers
