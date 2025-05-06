@@ -1,9 +1,0 @@
-# models/sources.yml
-sources:
-  - name: raw
-    tables:
-      - name: customers
-        description: Aloha metadata team.
-        columns:
-          - name: id
-            description: Definitely not the customers id.
