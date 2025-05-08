@@ -7,4 +7,4 @@ venv*
 .scratch
 .python-version
 .DS_Store
-.vscode
+.vscode/
