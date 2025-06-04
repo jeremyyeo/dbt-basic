@@ -8,3 +8,4 @@ venv*
 .python-version
 .DS_Store
 .vscode/
+dbt_internal_packages/
