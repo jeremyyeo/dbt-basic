@@ -1,1 +1,1 @@
-select 1 id
+select '{{ dbt_utils.pretty_time() }}' as c
