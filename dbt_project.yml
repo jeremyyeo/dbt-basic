@@ -1,10 +1,8 @@
 # dbt_project.yml
-name: my_dbt_project
-profile: sf
+name: analytics
+profile: all
 version: "1.0.0"
 
 models:
-  my_dbt_project:
+  analytics:
     +materialized: table
-
-on-run-end: "call db.sch.sleeper();"
