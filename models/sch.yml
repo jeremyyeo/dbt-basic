@@ -1,0 +1,71 @@
+sources:
+  - name: public
+    tables:
+      - name: source_old_way
+        columns:
+          - name: id
+            tags: ["my_tag"]
+            tests:
+              - not_null
+      - name: source_new_way
+        columns:
+          - name: id
+            config:
+              tags: ["my_tag"]
+            tests:
+              - not_null
+
+models:
+  - name: mdl_from_old
+    columns:
+      - name: id
+        tags: ["my_tag"]
+        tests:
+          - not_null
+  - name: mdl_from_new
+    columns:
+      - name: id
+        config:
+          tags: ["my_tag"]
+        tests:
+          - not_null
+
+seeds:
+  - name: seed_old
+    columns:
+      - name: id
+        tags: ["my_tag"]
+        tests:
+          - not_null
+  - name: seed_new
+    columns:
+      - name: id
+        config:
+          tags: ["my_tag"]
+        tests:
+          - not_null
+
+snapshots:
+  - name: snap_old
+    relation: ref('seed_old')
+    config:
+      unique_key: id
+      strategy: check
+      check_cols: all
+    columns:
+      - name: id
+        tags: ["my_tag"]
+        tests:
+          - not_null
+  - name: snap_new
+    relation: ref('seed_new')
+    config:
+      unique_key: id
+      strategy: check
+      check_cols: all
+    columns:
+      - name: id
+        config:
+          tags: ["my_tag"]
+        tests:
+          - not_null
