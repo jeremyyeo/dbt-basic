@@ -1,6 +1,6 @@
 # dbt_project.yml
 name: analytics
-profile: sf
+profile: all
 version: "1.0.0"
 
 models:
