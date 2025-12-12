@@ -6,8 +6,3 @@ version: "1.0.0"
 models:
   analytics:
     +materialized: table
-# flags:
-#   warn_error_options:
-#     silence:
-#       - DeprecationsSummary
-#       # - MissingArgumentsPropertyInGenericTestDeprecation
