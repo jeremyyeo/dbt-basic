@@ -1,2 +1,1 @@
-
-select 1 c
+select {{ double_this_column('col_1') }}
