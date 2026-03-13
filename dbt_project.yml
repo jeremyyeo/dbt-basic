@@ -6,7 +6,6 @@ version: "1.0.0"
 models:
   analytics:
     +materialized: table
-    +schema: prod
-
-flags:
-  state_modified_compare_more_unrendered_values: true
+    +persist_docs:
+      relation: true
+      columns: true

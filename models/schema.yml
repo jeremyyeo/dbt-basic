@@ -1,5 +1,15 @@
+# prettier-ignore
 models:
-  - name: foo
+-   name: foo
+    description: Something.
+    config:
+      access: public
+      contract:
+        enforced: false
     columns:
-      - name: c
-        description: This is the id.
+    -   name: concat(c, '#', d)
+        description: something
+        data_type: string
+        data_tests:
+        - unique
+        - not_null
