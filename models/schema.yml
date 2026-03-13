@@ -2,10 +2,6 @@
 models:
 -   name: foo
     description: Something.
-    config:
-      access: public
-      contract:
-        enforced: false
     columns:
     -   name: concat(c, '#', d)
         description: something
