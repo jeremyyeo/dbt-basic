@@ -1,11 +1,10 @@
-# prettier-ignore
 models:
--   name: foo
+  - name: foo
     description: Something.
     columns:
-    -   name: concat(c, '#', d)
+      - name: concat(c, '#', d)
         description: something
         data_type: string
         data_tests:
-        - unique
-        - not_null
+          - unique
+          - not_null
