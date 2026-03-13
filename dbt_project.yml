@@ -7,3 +7,6 @@ models:
   analytics:
     +materialized: table
     +schema: prod
+
+flags:
+  state_modified_compare_more_unrendered_values: true

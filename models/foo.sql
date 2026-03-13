@@ -1,1 +1,1 @@
-select 2 c
+select 1 c
