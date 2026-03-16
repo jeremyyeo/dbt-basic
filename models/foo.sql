@@ -1,1 +1,1 @@
-select 'a' as c, 'b' as d
+select *, 1 as new_col from {{ source('raw', 'customers') }}

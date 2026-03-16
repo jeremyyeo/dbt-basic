@@ -1,10 +1,4 @@
-models:
-  - name: foo
-    description: Something.
-    columns:
-      - name: concat(c, '#', d)
-        description: something
-        data_type: string
-        data_tests:
-          - unique
-          - not_null
+sources:
+  - name: raw
+    tables:
+      - name: customers
