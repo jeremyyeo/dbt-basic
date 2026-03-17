@@ -1,8 +1,8 @@
 # dbt_project.yml
-name: dbt_basic_8
+name: dbt_cll_check
 profile: sf
 version: "1.0.0"
 
 models:
-  dbt_basic_8:
+  dbt_cll_check:
     +materialized: table
