@@ -1,8 +1,10 @@
 # dbt_project.yml
-name: dbt_cll_check
+name: dbt_basic_5
 profile: sf
 version: "1.0.0"
 
 models:
-  dbt_cll_check:
+  dbt_basic_5:
     +materialized: table
+    marts:
+      +enabled: "{{ var('enable_marts', false) }}"
