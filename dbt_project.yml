@@ -6,5 +6,7 @@ version: "1.0.0"
 models:
   dbt_basic_5:
     +materialized: table
-    marts:
-      +enabled: "{{ var('enable_marts', false) }}"
+    national:
+      +enabled: true
+    regional:
+      +enabled: false
