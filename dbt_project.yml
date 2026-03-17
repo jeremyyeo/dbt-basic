@@ -1,8 +1,8 @@
 # dbt_project.yml
-name: dbt_basic_5
+name: dbt_basic_7
 profile: sf
 version: "1.0.0"
 
 models:
-  dbt_basic_5:
+  dbt_basic_7:
     +materialized: table
