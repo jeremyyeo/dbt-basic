@@ -1,1 +1,1 @@
-select * from {{ ref('super_bar') }}
+select * from {{ ref('super_foo') }}
