@@ -1,1 +1,1 @@
-select 1 c
+select * from {{ ref('ghi') }}
