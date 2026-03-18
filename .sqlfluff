@@ -1,4 +1,5 @@
 [sqlfluff]
+<<<<<<< HEAD
 dialect = snowflake
 templater = dbt
 runaway_limit = 10
@@ -35,3 +36,7 @@ capitalisation_policy = lower
 
 [sqlfluff:rules:ambiguous.column_references]  # Number in group by
 group_by_and_order_by_style = implicit
+=======
+templater = dbt
+dialect = snowflake
+>>>>>>> 16cf5b747f58c880ea7c60a690dec64b293d8c1f

@@ -9,3 +9,4 @@ venv*
 .DS_Store
 .vscode/
 dbt_internal_packages/
+.user.yml
