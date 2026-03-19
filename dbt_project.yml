@@ -6,7 +6,3 @@ version: "1.0.0"
 models:
   dbt_basic_5:
     +materialized: table
-    national:
-      +enabled: true
-    regional:
-      +enabled: false
