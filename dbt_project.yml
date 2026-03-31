@@ -1,11 +1,12 @@
 # dbt_project.yml
 name: dbt_basic_5
-profile: all
+profile: sf
 version: "1.0.0"
 
 models:
   dbt_basic_5:
     +materialized: table
+    marts:
+      +enabled: "{{ env_var('DBT_WHAT', 'dev') == 'prod' }}"
 
-flags:
-  use_materialization_v2: true
+on-run-end: "{% do print(env_var('DBT_WHAT', 'dev') == 'prod') %}"
