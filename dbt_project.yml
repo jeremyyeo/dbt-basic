@@ -6,7 +6,3 @@ version: "1.0.0"
 models:
   dbt_basic_5:
     +materialized: table
-    marts:
-      +enabled: "{{ env_var('DBT_WHAT', 'dev') == 'prod' }}"
-
-on-run-end: "{% do print(env_var('DBT_WHAT', 'dev') == 'prod') %}"
