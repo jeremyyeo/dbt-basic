@@ -10,3 +10,5 @@ venv*
 .vscode/
 dbt_internal_packages/
 .user.yml
+.claude/
+.hatch/

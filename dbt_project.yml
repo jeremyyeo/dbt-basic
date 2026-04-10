@@ -6,3 +6,6 @@ version: "1.0.0"
 models:
   dbt_basic_5:
     +materialized: table
+
+vars:
+  what: "{{ env_var('DBT_WHAT') }}"
