@@ -6,3 +6,4 @@ version: "1.0.0"
 models:
   dbt_basic_5:
     +materialized: table
+    +snowflake_warehouse: "{{ var('my_var') }}"
