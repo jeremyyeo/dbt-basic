@@ -12,3 +12,5 @@ dbt_internal_packages/
 .user.yml
 .claude/
 .hatch/
+profiles.yml
+dbt_cloud.yml

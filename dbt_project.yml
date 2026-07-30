@@ -6,4 +6,7 @@ version: "1.0.0"
 models:
   dbt_basic_5:
     +materialized: table
-    +snowflake_warehouse: "{{ var('my_var') }}"
+
+# dbt-cloud:
+#   project-id: 340980
+#   defer-env-id: 289725

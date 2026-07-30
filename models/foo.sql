@@ -1,1 +1,0 @@
-select '{{ var("my_var") }}' as c
