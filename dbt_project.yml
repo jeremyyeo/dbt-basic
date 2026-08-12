@@ -6,7 +6,3 @@ version: "1.0.0"
 models:
   dbt_basic_5:
     +materialized: table
-
-# dbt-cloud:
-#   project-id: 340980
-#   defer-env-id: 289725

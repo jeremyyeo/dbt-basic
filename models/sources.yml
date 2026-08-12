@@ -1,5 +1,0 @@
-sources:
-  - name: raw
-    database: db
-    tables:
-      - name: customers
